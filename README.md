@@ -1,15 +1,10 @@
 # BME
 The Quickest Fix: Force a Refresh
-The absolute easiest way to force GitHub to rebuild the site and make that PDF link work is to give the repository a tiny nudge:
+Step 1: Switch the Build Source
+Scroll to the top of your repository page and click on the Settings tab (the gear icon on the far right of the navigation bar next to Security and quality).
 
-Click on the Code tab at the top-left of your screen (next to Issues and Pull requests).
+In the left-hand sidebar, click on Pages.
 
-Click on your README.md file (or any small text file you have in the main folder).
+Under the Build and deployment section, look for the Source dropdown menu.
 
-Click the pencil icon in the top-right corner of the file preview to edit it.
-
-Add a single space or a period to the very bottom of the file.
-
-Click the green Commit changes... button in the top right.
-
-This small update forces GitHub's internal hosting system to wake up, re-scan the PROJECTS folder, and publish the new MAINLAB_poster.pdf. Give it about 60 seconds after committing, and your original link should load perfectly!
+If it is set to Deploy from a branch, switch it to GitHub Actions (or if it's already on Actions, toggle it back and forth to reset it).
